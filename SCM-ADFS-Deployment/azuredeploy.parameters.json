@@ -1,0 +1,75 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+      "location": {
+          "value": "westus"
+      },
+      "storageAccountType": {
+          "value": "Standard_LRS"
+      },
+      "virtualNetworkName": {
+          "value": "scm-infra-vnet"
+      },
+      "virtualNetworkAddressRange": {
+          "value": "10.18.0.0/16"
+      },
+      "internalSubnetName": {
+          "value": "scm-Internal-sn"
+      },
+      "internalSubnetAddressRange": {
+          "value": "10.18.0.0/24"
+      },
+      "dmzSubnetAddressRange": {
+          "value": "10.18.1.0/24"
+      },
+      "dmzSubnetName": {
+          "value": "scm-DMZ-sn"
+      },
+      "addc01NicIPAddress": {
+          "value": "10.18.0.101"
+      },
+      "addc02NicIPAddress": {
+          "value": "10.18.0.102"
+      },
+      "adfs01NicIPAddress": {
+          "value": "10.18.0.201"
+      },
+      "adfs02NicIPAddress": {
+          "value": "10.18.0.202"
+      },
+      "wap01NicIPAddress": {
+          "value": "10.18.1.101"
+      },
+      "wap02NicIPAddress": {
+          "value": "10.18.1.102"
+      },
+      "adfsLoadBalancerPrivateIpAddress": {
+          "value": "10.18.0.200"
+      },
+      "addcVmNamePrefix": {
+          "value": "scm-dc-0"
+      },
+      "adfsVmNamePrefix": {
+          "value": "scm-adfs-0"
+      },
+      "wapVmNamePrefix": {
+          "value": "scm-wap-0"
+      },
+      "adminUsername": {
+          "value": "cloudadmin"
+      },
+      "adminPassword": {
+          "value": "P@ssw0rd1234"
+      },
+      "addcVMsSize": {
+          "value": "Standard_DS1_V2"
+      },
+      "adfsVMsSize": {
+          "value": "Standard_DS1_V2"
+      },
+      "wapVMsSize": {
+          "value": "Standard_DS1_v2"
+      }
+  }
+}
